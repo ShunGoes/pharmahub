@@ -6,7 +6,7 @@ import { GiBeachBag } from "react-icons/gi"
 
 
 
-const Header = () => {
+const Headerr = () => {
 
     const [dropdown, setDropdown] = React.useState(false)
 
@@ -79,4 +79,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Headerr
