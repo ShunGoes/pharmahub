@@ -16,7 +16,7 @@ const Headerr = () => {
 
 
   return (
-    <div className="w-full h-[65px] flex justify-center items-center bg-white font-mont shadow-md relative" >
+    <div className="w-full h-[65px] flex justify-center items-center bg-white font-mont shadow-md fixed z-50" >
 
         <div className="w-[90%] flex justify-between items-center">
 
@@ -40,7 +40,7 @@ const Headerr = () => {
                     <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500 transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Blog</ol>
                     <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500 transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Glasses</ol>
 
-                    <button className="bg-[#1f2035] text-white pl-[25px] pr-[25px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-[#1f2035] transition-all ease-in-out">Log in</button>
+                    <button className="bg-[#1f2035] text-white pl-[25px] pr-[25px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-[#1f2035] transition-all ease-in-out duration-700">Log in</button>
                 </div>
 
                 <div className="mr-[7px] lg:ml:0 text-[20px] cursor-pointer relative text-[#1f2035]">
