@@ -59,14 +59,14 @@ const Header = () => {
         { dropdown ? 
 
             <div className="lg:hidden w-full h-[100vh] absolute top-[65px]  transition ease-in-out duration-100 " onClick={showDropdown}>
-                <div className="w-full h-[320px] bg-[#1f2035] flex flex-col pl-[15px] pt-[25px] gap-3">
+                <div className="w-full h-[320px] bg-[#1f2035] flex flex-col pl-[15px] sm:pl-[35px] pt-[25px] gap-3">
                     <ol className="cursor-pointer text-[14px] text-white">Home</ol>
                     <ol className="cursor-pointer text-[14px] text-white">Shop</ol>
                     <ol className="cursor-pointer text-[14px] text-white">About</ol>
                     <ol className="cursor-pointer text-[14px] text-white">Blog</ol>
                     <ol className="cursor-pointer text-[14px] text-white">Glasses</ol>
 
-                    <button className="bg-red-500 text-white w-[150px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-red-500 transition ease-in-out dorution-500 mt-[15px]">Log in</button>
+                    <button className="bg-red-500 text-white w-[150px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-red-500 transition ease-in-out duration-500 mt-[15px]">Log in</button>
                 </div>
 
             </div>
