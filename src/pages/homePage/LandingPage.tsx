@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { Hero } from "."
+import { Hero, Search } from "."
 
 
 const LandingPage = () => {
@@ -8,6 +8,7 @@ const LandingPage = () => {
     <div>
       
       <Hero />
+      <Search />
 
     </div>
   )

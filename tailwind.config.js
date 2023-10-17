@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         mont : ['Montserrat', 'sans-serif']
+      },
+      backgroundImage: {
+        'hero-img' : "url('/src/assets/images/hero-img.png')"
       }
     },
   },
