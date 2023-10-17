@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi"
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-hero-img bg-cover bg-center relative">
+    <div className="w-full h-screen flex justify-center items-center bg-hero-img bg-cover bg-center relative font-mont">
 
         <div className="absolute w-[100%] h-[100%] bg-black opacity-50 top-0"></div>
 
