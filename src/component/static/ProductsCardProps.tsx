@@ -19,7 +19,7 @@ const ProductsCardProps:React.FC<iProducts> = ({productImage, productName, produ
 
             <h6 className="text-[#0a4757] text-[13px]  mt-[3px]">{productPrice}</h6>
 
-            <button className='border-[#f4edc9] text-[#f4edc9] text-[12px] bg-transparent mt-[7px] pt-'>Add to Cart</button>
+            <button className='border-red-500 text-red-500 text-[12px] bg-transparent mt-[7px] pt-'>Add to Cart</button>
         </div>
 
     </div>
