@@ -2,6 +2,9 @@
 
 import { ProductsCardProps } from "../../component"
 import bComplex from "../../assets/images/B complex.png"
+import ashwa from "../../assets/images/Ashwagandha.png"
+import benylin from "../../assets/images/Benylin.png"
+import natroe from "../../assets/images/Natroe Biotin.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,14 +76,14 @@ const Products = () => {
                         />
 
                     <ProductsCardProps 
-                            productImage={bComplex}
-                            productName="Alive B-complex"
+                            productImage={ashwa}
+                            productName="Ashwagandha"
                             productPrice="#2500"
                         />
 
                     <ProductsCardProps 
-                            productImage={bComplex}
-                            productName="Alive B-complex"
+                            productImage={benylin}
+                            productName="Benylin"
                             productPrice="#2500"
                         />
                         
@@ -91,8 +94,8 @@ const Products = () => {
                         />
 
                     <ProductsCardProps 
-                            productImage={bComplex}
-                            productName="Alive B-complex"
+                            productImage={natroe}
+                            productName="Natroe Biotin"
                             productPrice="#2500"
                         />
 
