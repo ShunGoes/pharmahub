@@ -10,11 +10,11 @@ const ProductsCardProps:React.FC<iProducts> = ({productImage, productName, produ
   return (
     <div className="bg-white shadow-md h-[290px]  w-[250px] flex flex-col items-cen rounded-md justify-between gap-4 font-mont mb-[25px] ml-[20px] sm:ml-[35px] lg:ml-[20px]">
 
-        <div className='bg-[#e7f6f4] h-[60%] flex justify-center items-center'>
+        <div className='bg-white shado h-[55%] flex justify-center items-center'>
             <img className='w-[75px]' src={productImage} alt="" />
         </div>
 
-        <div className='ml-[20px] mb-[20px] '>
+        <div className='pl-[20px] pb-[20px] pt-[15px] bg-[#edebf0] w-full '>
             <h6 className="text-[#0a4757] text-[14px] font-bold">{productName}</h6>
 
             <h6 className="text-[#0a4757] text-[13px]  mt-[3px]">{productPrice}</h6>
