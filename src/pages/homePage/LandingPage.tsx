@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { Hero, Order, Products, Quality, Search, Service } from "."
+import { Hero, Order, Products, Quality, Search, Service, ShopByCondition } from "."
 
 
 const LandingPage = () => {
@@ -13,6 +13,7 @@ const LandingPage = () => {
       <Order />
       <Quality />
       <Products />
+      <ShopByCondition />
 
     </div>
   )

@@ -50,7 +50,7 @@ const Products = () => {
     }
 
   return (
-    <div className="w-full flex justify-center items-center pt-[35px] pb-[45px] lg:pb-[65px] font-mont overflow-hidden">
+    <div className="w-full flex justify-center items-center pt-[35px] pb-[25px] lg:pb-[65px] font-mont overflow-hidden">
 
         <div className="w-[90%] flex flex-col justify-center items-center">
 
@@ -62,38 +62,40 @@ const Products = () => {
 
             <div className="w-[80%] flex justify-between items-center mb-[20px]">
                 <h6 className="text-[#0a4757] text-[13px]">Featured</h6>
-                <h6 className="text-[#0a4757] text-[13px]">See all</h6>
+                <h6 className="text-[#0a4757] text-[13px] cursor-pointer">See all</h6>
             </div>
 
             <div className="w-full ml-[0px] ">
 
-                <Slider {...settings} className="ml-[15px] sm:ml-[30px] lg:ml-[30px]">
+                <Slider {...settings} 
+                className="ml-[15px] sm:ml-[30px] lg:ml-[30px]"
+                >
 
-                    <ProductsCardProps 
+                        <ProductsCardProps 
                             productImage={bComplex}
                             productName="Alive B-complex"
                             productPrice="#2500"
                         />
 
-                    <ProductsCardProps 
+                        <ProductsCardProps 
                             productImage={ashwa}
                             productName="Ashwagandha"
                             productPrice="#2500"
                         />
 
-                    <ProductsCardProps 
+                        <ProductsCardProps 
                             productImage={benylin}
                             productName="Benylin"
                             productPrice="#2500"
                         />
-                        
-                    <ProductsCardProps 
+
+                        <ProductsCardProps 
                             productImage={bComplex}
                             productName="Alive B-complex"
                             productPrice="#2500"
                         />
 
-                    <ProductsCardProps 
+                        <ProductsCardProps 
                             productImage={natroe}
                             productName="Natroe Biotin"
                             productPrice="#2500"
