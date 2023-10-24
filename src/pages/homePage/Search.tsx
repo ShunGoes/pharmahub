@@ -5,7 +5,7 @@ const Search = () => {
   return (
     <div className="w-full flex items-center justify-center relative lg:h-[100px] sm:h-[220px] font-mont">
 
-        <div className="lg:hidden w-[90%] h-[45px] bg-[#f7f7fd] text-[#1f2035] border-[1px] rounded shadow-md mt-[px] flex items-center pl-[10px] font-mont">
+        <div className="lg:hidden w-[90%] h-[45px] bg-[#f7f7fd] text-[#1f2035] border-[1px] rounded shadow-md mt-[25px] mb-[25px] flex items-center pl-[10px] font-mont ">
             <div className="mr-[7px] text-[#1f2035]">
                 <BiSearch />
             </div>
