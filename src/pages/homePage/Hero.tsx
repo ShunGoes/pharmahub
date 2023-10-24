@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="absolute w-[100%] h-[100%] bg-black opacity-50 top-0"></div>
 
         <div className="w-[90%] z-20 flex flex-col justify-center items-center">
-            <h5 className="text-white w-[90%] lg:w-[60%] text-[23px] sm:text-[35px] sm:w-[70%] lg:text-[45px] font-bold text-center mt-[50px] animate-pulse ">
+            <h5 className="text-white w-[90%] lg:w-[60%] text-[23px] sm:text-[35px] sm:w-[70%] lg:text-[45px] font-bold text-center mt-[110px] animate-pulse">
                 Quality Medication and Healthcare at your Doorstep.
             </h5>
 
