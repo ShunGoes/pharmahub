@@ -55,13 +55,13 @@ const ShopByCondition = () => {
         <div className="w-[90%] flex flex-col justify-center items-center">
 
             <div className="w-[100%] flex justify-between items-center mb-[20px]">
-                <h6 className="text-[#0a4757] text-[13px]">Shop by condition</h6>
-                <h6 className="text-[#0a4757] text-[13px] cursor-pointer p-[5px] pl-[10px] pr-[10px] bg-[#f5f7f8]">See All</h6>
+                <h6 className="text-[#0a4757] text-[13px] font-semibold">Shop by condition</h6>
+                <h6 className="text-[#0a4757] text-[13px] cursor-pointer p-[5px] pl-[10px] pr-[10px] bg-[#f5f7f8] rounded">See All</h6>
             </div>
 
             <div className="w-full ml-[0px] ">
 
-                <Slider {...settings} className="ml-[15px] sm:ml-[30px] lg:ml-[30px]">
+                <Slider {...settings} className="ml-[10px] sm:ml-[30px] lg:ml-[30px]">
 
                     <ShopByConditionProps 
                             conditionImage={headache}
