@@ -43,7 +43,7 @@ const Footer = () => {
           <a className="text-[12px] cursor-pointer text-white no-underline">Wound Dressing Supplies</a>
         </div>
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[220px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3 w-[210px] ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">QUICK LINKS</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">Home</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">About Us</a>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[220px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3 w-[200px] ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">SERVICES</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">Shipping</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">Medications</a>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
 
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[220px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3 w-[200px] ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">ACCOUNT</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">My Account</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">My Cart</a>
