@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="w-full  flex flex-col justify-center items-center bg-[#083845] font-mont pt-[40px] lg:pt-[50px] pb-[30px] text-white">
 
-      <div className="w-[90%] flex flex-wrap justify-between pb-[25px] gap-7">
+      <div className="w-[90%] flex flex-col lg:flex-row justify-between pb-[25px] gap-7">
 
         <div className=" flex flex-col gap-2 lg:gap-3">
           <img className="w-[100px] mb-[20px]" src={pharmaWhite} alt="" />
@@ -34,7 +34,7 @@ const Footer = () => {
 
         </div>
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[220px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3  ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">POPULAR SHOP CATEGORIES</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">Medical & Hospital Equipments</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">Supplements</a>
@@ -43,7 +43,7 @@ const Footer = () => {
           <a className="text-[12px] cursor-pointer text-white no-underline">Wound Dressing Supplies</a>
         </div>
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[210px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3  ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">QUICK LINKS</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">Home</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">About Us</a>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[200px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3  ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">SERVICES</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">Shipping</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">Medications</a>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
 
 
-        <div className=" flex flex-col gap-2 lg:gap-3 w-[200px] ">
+        <div className=" flex flex-col gap-2 lg:gap-3  ">
           <h5 className="text-[#7f9ca3] text-[13px] font-semibold">ACCOUNT</h5>
           <a className="text-[12px] cursor-pointer text-white no-underline">My Account</a>
           <a className="text-[12px] cursor-pointer text-white no-underline">My Cart</a>
