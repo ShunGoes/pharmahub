@@ -54,9 +54,9 @@ const ShopByCondition = () => {
 
         <div className="w-[90%] flex flex-col justify-center items-center">
 
-            <div className="w-[80%] flex justify-between items-center mb-[20px]">
+            <div className="w-[100%] flex justify-between items-center mb-[20px]">
                 <h6 className="text-[#0a4757] text-[13px]">Shop by condition</h6>
-                <h6 className="text-[#0a4757] text-[13px] cursor-pointer">See all</h6>
+                <h6 className="text-[#0a4757] text-[13px] cursor-pointer p-[5px] pl-[10px] pr-[10px] bg-[#f5f7f8]">See All</h6>
             </div>
 
             <div className="w-full ml-[0px] ">

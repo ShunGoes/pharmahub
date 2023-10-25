@@ -5,3 +5,4 @@ export {default as Order} from "./Order";
 export {default as Quality} from "./Quality";
 export {default as Products} from "./Products";
 export {default as ShopByCondition} from "./ShopByCondition";
+export {default as HealthCheck} from "./HealthCheck";
