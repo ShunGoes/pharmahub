@@ -2,6 +2,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomePageLayout } from "../layout";
 import { lazy } from "react";
+import ShopPage from "../pages/shop/ShopPage";
 // import LandingPage from "../pages/homePage/LandingPage";
 
 
@@ -16,6 +17,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <LandingPage />
+            }
+        ]
+    },
+    {
+        path: "/shop",
+        element: <HomePageLayout />,
+        children: [
+            {
+                index: true,
+                element: <ShopPage />
             }
         ]
     },
