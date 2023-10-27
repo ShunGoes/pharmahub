@@ -6,6 +6,7 @@ import { PiShoppingCartSimpleBold } from "react-icons/pi"
 import { BiSearch } from "react-icons/bi"
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md"
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
             </div>
 
             <div className='flex gap-4 items-center'>
-                <button className="hidden bg-[#1f2035] text-white lg:flex justify-center items-center pl-[20px] pr-[20px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-[#1f2035] transition-all ease-in-out duration-700">Log in</button>
+                <NavLink to="/selectSignin"><button className="hidden bg-[#1f2035] text-white lg:flex justify-center items-center pl-[20px] pr-[20px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-[#1f2035] transition-all ease-in-out duration-700">Log in</button></NavLink>
 
                 <div className="lg:hidden w-[35px]  h-[35px]  bg-[#d6e0e2] border-[#bdcfd2] border-[0.5px] rounded flex justify-center items-center mr-[px] lg:ml:0 text-[17px] lg:text-[21px] cursor-pointer relative text-[#1f2035]">
                     <PiShoppingCartSimpleBold />
@@ -100,9 +101,9 @@ const Header = () => {
                     <ol className="cursor-pointer text-[14px] ">Blog</ol>
                     <ol className="cursor-pointer text-[14px] ">Contact US</ol>
 
-                    <button className="text-white w-[150px] bg-[#1f2035] hover:bg-transparent hover:text-[#1f2035] hover:border-[1px] hover:border-[#1f2035] transition ease-in-out duration-500 mt-[px]">
+                    <NavLink to="/selectSigin"><button className="text-white w-[150px] bg-[#1f2035] hover:bg-transparent hover:text-[#1f2035] hover:border-[1px] hover:border-[#1f2035] transition ease-in-out duration-500 mt-[px]">
                         Log in
-                    </button>
+                    </button></NavLink>
                 </div>
 
 {/*                 
