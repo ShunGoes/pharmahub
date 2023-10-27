@@ -6,3 +6,4 @@ export {default as Quality} from "./Quality";
 export {default as Products} from "./Products";
 export {default as ShopByCondition} from "./ShopByCondition";
 export {default as HealthCheck} from "./HealthCheck";
+export {default as News} from "./News";

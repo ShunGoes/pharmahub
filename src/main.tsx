@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.tsx'
 import './index.css'
-import { element } from './routes/HomeRoutes'
+import { element } from './routes/AllRoutes'
 import { RouterProvider } from "react-router-dom"
 import IsLoading from './pages/isLoading/IsLoading'
 
