@@ -77,7 +77,7 @@ const Footer = () => {
 
 
       <div className="w-[90%] flex justify-center items-center text-[10px] sm:text-[13px] lg:text-[15px] pt-[30px]">
-        Copyright C. 2022 PharmHub | Powered by PIT Africa
+        Copyright C. 2022 PharmaHub | Powered by PIT Africa
       </div>      
 
     </div>
