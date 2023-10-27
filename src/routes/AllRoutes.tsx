@@ -6,6 +6,7 @@ import SelectSigninLayout from "../layout/authLayout/selectAuth/SelectSigninLayo
 import SelectSignupLayout from "../layout/authLayout/selectAuth/SelectSignupLayout";
 import { UserSigninLayout, UserSignupLayout } from "../layout/authLayout";
 import ShopPage from "../pages/shop/ShopPage";
+import ShopLayout from "../pages/shop/ShopLayout";
 
 
 const LandingPage = lazy(() => import("../pages/homePage/LandingPage"));
@@ -68,7 +69,7 @@ export const element = createBrowserRouter([
     },
     {
         path: "/shop",
-        element: <HomePageLayout />,
+        element: <ShopLayout />,
         children: [
             {
                 index: true,

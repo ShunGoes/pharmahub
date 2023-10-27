@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 const ProductList = () => {
  
   return (
-    <div className="pt-8 grid grid-cols-3 gap-8">
+    <div className="pt-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
       {ProductData.map((item) => (
         <div
           key={item.id}
@@ -32,7 +32,8 @@ const ProductList = () => {
           </div>
           </span>
           <p className="text-2xl ">{item.title}</p>
-          <span><p className="font-bold text-2xl~">#{item?.discount?.toFixed(2)}</p>
+         
+          <span className="flex item-center gap-x-4 py-8"> {item?.discount && (<p className="font-bold text-2xl line-through text-[#9EA6A9]">#{item?.discount?.toFixed(2)}</p>)}
           <p className="font-bold text-2xl">#{item.price.toFixed(2)}</p></span>
           <button className="text-[#9EA6A9] rounded-[10px] h-14 px-8 border border-[#9EA6A9] focus:outline-none">
             Add to Cart
