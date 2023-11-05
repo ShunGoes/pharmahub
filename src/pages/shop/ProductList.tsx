@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ProductData from "./data";
-import { AiFillStar } from "react-icons/ai";
-import ReactPaginate from "react-paginate";
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import Paginate from "./Paginate";
+import { useNavigate } from "react-router-dom";
+import Ratings from "./Ratings";
 
 const ProductList = () => {
   const [currentPage, setCurrentPage] = useState<number>(0);
@@ -10,14 +10,9 @@ const ProductList = () => {
   const PER_PAGE: number = 6;
   const pageCount: number = Math.ceil(ProductData.length / PER_PAGE);
 
-  function handlePageclick({ selected }: { selected: number }) {
-    setCurrentPage(selected);
-  }
-
-  const hidePrevious = currentPage === 0;
-  const hideNext = currentPage === pageCount - 1;
-
   const offset: number = currentPage * PER_PAGE;
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -25,6 +20,7 @@ const ProductList = () => {
         {ProductData.slice(offset, offset + PER_PAGE).map((item) => (
           <div
             key={item.id}
+            onClick={() => navigate("/shopbyid")}
             className="rounded-[10px] border border-[#E2E2E2] pt-20 pb-4 px-8"
           >
             <div className="flex justify-center relative ">
@@ -42,21 +38,7 @@ const ProductList = () => {
             <span className="flex justify-between py-4">
               <p className="text-sm text-[#A3A3A3] ">Uncategorized</p>
 
-              <div className="flex items-center justify-center px-2">
-                {[...Array(5)].map((_, index) => {
-                  index += 1;
-
-                  return (
-                    <AiFillStar
-                      key={index}
-                      className={`bg-transparent border-0 outline-0 text-xl
-                        ${
-                          index <= item.star ? "text-[#FFCC02]" : "text-[#ccc]"
-                        }`}
-                    />
-                  );
-                })}
-              </div>
+              <Ratings star={item.star} />
             </span>
             <p className="text-2xl ">{item.title}</p>
 
@@ -75,31 +57,11 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      <ReactPaginate
-        nextClassName={
-          hideNext
-            ? undefined
-            : `absolute border border-[#9EA6A9] w-14 h-14 rounded-[5px] p-6 flex items-center justify-center relative`
-        }
-        pageClassName="border border-[#9EA6A9] w-14 h-14 rounded-[5px] p-6 flex items-center justify-center relative"
-        previousClassName={
-          hidePrevious
-            ? undefined
-            : `absolute border border-[#9EA6A9] w-14 h-14 rounded-[5px] p-6 flex items-center justify-center relative`
-        }
-        breakLabel="..."
-        breakClassName="border border-[#9EA6A9] w-14 h-14 rounded-[5px] p-6 flex items-center justify-center relative"
-        nextLabel={
-          hideNext ? null : <MdArrowForwardIos className="text-[#111111]" />
-        }
-        previousLabel={
-          hidePrevious ? null : <MdArrowBackIos className="text-[#111111]" />
-        }
+
+      <Paginate
+        currentPage={currentPage}
         pageCount={pageCount}
-        onPageChange={handlePageclick}
-        pageRangeDisplayed={4}
-        renderOnZeroPageCount={null}
-        className="flex justify-center gap-x-2 mt-20 relative"
+        setCurrentPage={setCurrentPage}
       />
     </>
   );
