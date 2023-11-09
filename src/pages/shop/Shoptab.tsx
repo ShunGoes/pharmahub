@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
+import ReviewsTab from "./reviewsTab";
 
 const Shoptab = () => {
   const [tabIndex, setTabIndex] = useState(0);
-
+ 
   const TabTitle = ["Description", "How To Use", `Reviews (0)`];
+
+
   return (
     <div className="bg-white">
       <div className="w-[90%] mx-auto py-16">
@@ -54,7 +57,9 @@ const Shoptab = () => {
             </div>
           </TabPanel>
           <TabPanel></TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <ReviewsTab />
+          </TabPanel>
         </Tabs>
       </div>
     </div>
