@@ -60,7 +60,7 @@ const ShopById = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <h2 className="font-medium text-5xl ">#2500</h2>
+                  <h2 className="font-medium text-5xl ">₦2500</h2>
                   <span className="flex items-center gap-x-2">
                     <FiCheckCircle className="text-2xl text-[#0A4757]" />
                     <p className="text-[#0A4757] text-2xl">Out of Stock</p>

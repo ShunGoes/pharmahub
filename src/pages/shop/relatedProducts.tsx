@@ -51,7 +51,7 @@ const RelatedProducts = () => {
         <Slider {...settings}>
           {ProductData.map((item) => (
             <div className="px-6">
-              <div className="  border border-[#E2E2E2] h-full w-full px-6 pb-4 rounded-[10px]">
+              <div className="border border-[#E2E2E2] h-full w-full px-6 pb-4 rounded-[10px]">
                 <div className="flex justify-center relative mt-16 h-full">
                   <img
                     src={item.img}
@@ -75,10 +75,10 @@ const RelatedProducts = () => {
                   {" "}
                   {item?.discount && (
                     <p className="font-bold text-2xl line-through text-[#9EA6A9]">
-                      #{item?.discount?.toFixed(2)}
+                      ₦{item?.discount?.toFixed(2)}
                     </p>
                   )}
-                  <p className="font-bold text-2xl">#{item.price.toFixed(2)}</p>
+                  <p className="font-bold text-2xl text-black">₦{item.price.toFixed(2)}</p>
                 </span>
                 <button className="text-[#9EA6A9] rounded-[10px] h-14 px-8 border border-[#9EA6A9] focus:outline-none">
                   Add to Cart
