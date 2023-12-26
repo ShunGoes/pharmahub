@@ -20,7 +20,7 @@ const CartSummary = () => {
   
   
   return (
-    <section className=" h-auto  mx-auto flex flex-col gap-10 border p-3 lg:p-7 lg:mx-0">
+    <section className=" h-auto  mx-auto flex flex-col gap-10 border p-5 lg:p-7 lg:mx-0">
       <h3 className="text-[#0A4757] text-[18px] font-[700]">Cart SUmmary</h3>
       <div className="flex w-full ">
         <div className="flex flex-col  w-full lg:w-full  gap-3">
