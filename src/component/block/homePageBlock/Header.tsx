@@ -34,20 +34,20 @@ const Header = () => {
             <div className='flex gap-4 items-center'>
                 <NavLink to="/selectSignin"><button className="hidden bg-[#1f2035] text-white lg:flex justify-center items-center pl-[20px] pr-[20px] hover:border-[1px] border-[#1f2035] hover:bg-transparent hover:text-[#1f2035] transition-all ease-in-out duration-700">Log in</button></NavLink>
 
-                <div className="lg:hidden w-[35px]  h-[35px]  bg-[#d6e0e2] border-[#bdcfd2] border-[0.5px] rounded flex justify-center items-center mr-[px] lg:ml:0 text-[17px] lg:text-[21px] cursor-pointer relative text-[#1f2035]">
+                <NavLink to='/cart' className="lg:hidden w-[35px]  h-[35px]  bg-[#d6e0e2] border-[#bdcfd2] border-[0.5px] rounded flex justify-center items-center mr-[px] lg:ml:0 text-[17px] lg:text-[21px] cursor-pointer relative text-[#1f2035]">
                     <PiShoppingCartSimpleBold />
 
                     <h6 className="absolute w-[15px] h-[15px] bg-red-600 rounded-full text-white text-[10px] flex justify-center items-center top-[2px] right-[2px]">0</h6>
-                </div>
+                </NavLink>
 
-                <div className="hidden lg:flex justify-around items-center w-[125px]  h-[45px]  bg-[#d6e0e2] border-[#bdcfd2] border-[0.5px] rounded font-semibold pl-[px] cursor-pointer">
+                <NavLink to='/cart' className="hidden lg:flex justify-around items-center w-[125px]  h-[45px]  bg-[#d6e0e2] border-[#bdcfd2] border-[0.5px] rounded font-semibold pl-[px] cursor-pointer">
                     <div className="flex border-r-[0.5px] border-r-[#1f2035] pr-[px] text-[15px] items-center ml-[10px] w-[70%]">
                         <PiShoppingCartSimpleBold />
                         <h6 className="ml-[5px]">My cart</h6>
                     </div>
 
                     <h5 className="w-[20%] flex justify-center items-center">0</h5>
-                </div>
+                </NavLink>
 
             </div>
 

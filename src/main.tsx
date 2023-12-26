@@ -5,11 +5,14 @@ import './index.css'
 import { element } from './routes/AllRoutes'
 import { RouterProvider } from "react-router-dom"
 import IsLoading from './pages/isLoading/IsLoading'
+import { CartContextProvider } from './context/cart-context'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Suspense fallback={<IsLoading />}>
-    <RouterProvider router={element} />
+      <CartContextProvider>
+        <RouterProvider router={element} />
+      </CartContextProvider>
     {/* <App /> */}
     </Suspense>
   </React.StrictMode>,
