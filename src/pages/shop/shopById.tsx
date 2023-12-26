@@ -9,7 +9,7 @@ import Shoptab from "./Shoptab";
 import RelatedProducts from "./relatedProducts";
 
 const ShopById = () => {
-  const [counter, setCounter] = useState(1);
+  const [counter, setCounter] = useState(0);
   const navigate = useNavigate();
 
   return (
@@ -27,16 +27,16 @@ const ShopById = () => {
         </section>
 
         <section className="text-black">
-          <div className="flex gap-x-8">
-            <div className="flex justify-center py-[50px] px-10 border border-[#E2E2E2] w-2/5 rounded-[10px]">
-              <div className="bg-white w-[400px] h-[400px]">
+          <div className="md:flex gap-x-8">
+            <div className="flex justify-center py-[50px] px-10 border border-[#E2E2E2] md:w-2/5 rounded-[10px]">
+              <div className="bg-white md:w-[400px] w-[200px] md:h-[400px]">
                 <img src={alive_b_complex} alt="" className="w-full h-full" />
               </div>
             </div>
-            <div className="w-3/5">
-              <div className="w-2/3 h-full flex flex-col justify-between">
-                <div className="w-4/5 flex flex-col items-start">
-                  <h2 className="text-4xl  font-medium pb-4">
+            <div className="lg:w-3/5">
+              <div className="lg:w-2/3 h-full flex flex-col justify-between">
+                <div className="lg:w-4/5 flex flex-col items-start md:py-0 py-4">
+                  <h2 className="text-4xl font-medium pb-4">
                     Alive B-Complex
                   </h2>
                   <p className=" leading-6">
@@ -60,19 +60,20 @@ const ShopById = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <h2 className="font-medium text-5xl ">₦2500</h2>
+                  <h2 className="font-medium sm:text-5xl text-3xl">₦2500</h2>
                   <span className="flex items-center gap-x-2">
                     <FiCheckCircle className="text-2xl text-[#0A4757]" />
                     <p className="text-[#0A4757] text-2xl">Out of Stock</p>
+                    {/* <p className="text-[#0A4757] text-2xl">In Stock</p> */}
                   </span>
                 </div>
                 <div>
                   <h5>Quantity:</h5>
-                  <div className="flex items-center gap-x-8 mt-4">
+                  <div className="flex items-center gap-x-8 my-4">
                     <button
-                      className={`${counter <= 1 ? 'bg-[#9EA6A9] cursor-default' : 'bg-[#0A4757]'} focus:outline-none rounded-full text-white w-[50px] h-[50px] relative`}
+                      className={`${counter <= 0 ? 'bg-[#9EA6A9] cursor-default' : 'bg-[#0A4757]'} focus:outline-none rounded-full text-white w-[50px] h-[50px] relative`}
                       onClick={() => {
-                        counter <= 1 ? setCounter(1) : setCounter(counter - 1);
+                        counter <= 0 ? setCounter(0) : setCounter(counter - 1);
                       }}
                     >
                       <BiMinus className="absolute top-0 bottom-0 right-0 left-0 h-full w-full px-1" />
@@ -87,10 +88,10 @@ const ShopById = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-x-8 w-full">
-                  <button className="focus:outline-none text-lg text-[#9EA6A9] font-medium h-[60px] w-full rounded-[10px] border border-[#9EA6A9]">
+                  <button className="focus:outline-none text-lg text-[#9EA6A9] font-medium h-[60px] w-full p-0 rounded-[10px] border border-[#9EA6A9]">
                     Add To Cart
                   </button>
-                  <button className="focus:outline-none text-lg text-white bg-[#9EA6A9] font-medium h-[60px] w-full rounded-[10px] border border-[#9EA6A9]">
+                  <button className="focus:outline-none text-lg text-white bg-[#9EA6A9] font-medium h-[60px] w-full p-0 rounded-[10px] border border-[#9EA6A9]">
                     Buy Now
                   </button>
                 </div>
@@ -99,15 +100,15 @@ const ShopById = () => {
           </div>
         </section>
 
-        <section className="mt-6 w-3/5">
-          <div className="w-2/3 flex justify-center gap-6">
-          <div className="w-[100px] h-[100px] p-[10px] border hover:border-[#FFCC02] rounded-[5px]">
+        <section className="mt-6 md:w-3/5">
+          <div className="w-2/3 flex justify-center md:gap-6 gap-x-2">
+          <div className="w-[100px] lg:h-[100px] lg:p-[10px] p-1 border hover:border-[#FFCC02] rounded-[5px]">
             <img src={alive_b_complex} alt='' className="" />
           </div>
-          <div className="w-[100px] h-[100px] p-[10px] border hover:border-[#FFCC02] rounded-[5px]">
+          <div className="w-[100px] lg:h-[100px] lg:p-[10px] p-1 border hover:border-[#FFCC02] rounded-[5px]">
             <img src={alive_b_complex} alt='' className="" />
           </div>
-          <div className="w-[100px] h-[100px] p-[10px] border hover:border-[#FFCC02] rounded-[5px]">
+          <div className="w-[100px] lg:h-[100px] lg:p-[10px] p-1 border hover:border-[#FFCC02] rounded-[5px]">
             <img src={alive_b_complex} alt='' className="" />
           </div></div>
         </section>

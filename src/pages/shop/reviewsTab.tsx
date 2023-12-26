@@ -6,15 +6,15 @@ const ReviewsTab = () => {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="border border-[#E2E2E2] rounded-[10px] py-12 px-24">
+    <div className="border border-[#E2E2E2] rounded-[10px] py-12 lg:px-24 px-3">
       <span className="leading-7 text-lg text-black">
         <h3 className="text-lg text-center pb-6">
           No reviews yet for this product.
         </h3>
         <h1 className="text-2xl py-2">Write a review:</h1>
         <form>
-          <div className="flex justify-between w-full gap-x-8">
-            <div className="flex flex-col gap-y-6 w-1/3">
+          <div className="lg:flex justify-between w-full gap-x-8">
+            <div className="flex flex-col gap-y-6 g:w-1/3">
               <span className="flex flex-col gap-y-2">
                 <label htmlFor="Name">Name:</label>
                 <input
@@ -32,14 +32,14 @@ const ReviewsTab = () => {
                 />
               </span>
             </div>
-            <div className="w-1/3">
+            <div className="lg:w-1/3 lg:my-0 my-4">
               <textarea
                 id=""
                 placeholder="Write your review...."
                 className="bg-[#F2F2F2] w-full h-full rounded-[10px] p-6 outline-none resize-none"
               />
             </div>
-            <div className="w-1/5 flex flex-col justify-center items-center">
+            <div className="lg:w-1/5 flex flex-col justify-center items-center">
               <h3>Rate the product:</h3>
               <div className="flex items-center mb-4 px-6">
                 {[...Array(5)].map((__, index) => {
