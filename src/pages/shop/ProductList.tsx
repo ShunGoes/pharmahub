@@ -21,7 +21,7 @@ const ProductList = () => {
           <div
             key={item.id}
             onClick={() => navigate("/shopbyid")}
-            className="rounded-[10px] border border-[#E2E2E2] pt-20 pb-4 px-8"
+            className="rounded-[10px] border border-[#E2E2E2] pt-20 pb-4 px-8 cursor-pointer"
           >
             <div className="flex justify-center relative ">
               <img
