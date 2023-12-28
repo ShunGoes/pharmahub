@@ -60,8 +60,8 @@ const Header = () => {
         <div className="w-[90%] h-[45%] flex justify-between items-center">
 
             <div className="hidden lg:flex gap-6 mr-[30px] items-center">
-                    <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500  transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Home</ol>
-                    <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500  transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Shop</ol>
+                    <NavLink to='/' className="cursor-pointer text-[14px] text-[#1f2035] hover:text-red-500 transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Home</NavLink>
+                    <NavLink to='/shop' className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500  transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Shop</NavLink>
                     <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500  transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">About Us</ol>
                     <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500 transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Blog</ol>
                     <ol className="cursor-pointer text-[14px] text-[#1f2035]  hover:text-red-500 transition ease-out duration-300 hover:animate-pulse transform hover:scale-125">Contact US</ol>

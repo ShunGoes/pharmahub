@@ -16,26 +16,20 @@ const RelatedProducts = () => {
     rtl: true,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 4000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 770,
+        breakpoint: 1040,
         settings: {
           slidesToShow: 2,
         },
       },
       {
         breakpoint: 600,
-        settings: {
-          slidestoShow: 1,
-        },
-      },
-      {
-        breakpoint: 475,
         settings: {
           slidesToShow: 1,
         },
@@ -45,13 +39,15 @@ const RelatedProducts = () => {
 
   return (
     <div className="bg-white pb-24">
-      <div className="w-[90%] mx-auto ">
-      <h2 className="text-black text-[32px] font-medium pb-10 pl-6">Related Products</h2>
+      <div className="px-3">
+        <h2 className="text-black text-[32px] font-medium pb-10 lg:pl-6 lg:text-left text-center">
+          Related Products
+        </h2>
 
-        <Slider {...settings}>
+        <Slider {...settings} arrows={false}>
           {ProductData.map((item) => (
-            <div className="px-6">
-              <div className="  border border-[#E2E2E2] h-full w-full px-6 pb-4 rounded-[10px]">
+            <div className="lg:px-6">
+              <div className="border border-[#E2E2E2] h-full w-full px-6 pb-4 rounded-[10px]">
                 <div className="flex justify-center relative mt-16 h-full">
                   <img
                     src={item.img}
@@ -71,16 +67,18 @@ const RelatedProducts = () => {
                 </span>
                 <p className="text-2xl ">{item.title}</p>
 
-                <span className="flex item-center gap-x-4 py-8">
+                <span className="flex item-center flex-wrap gap-x-4 py-8">
                   {" "}
                   {item?.discount && (
                     <p className="font-bold text-2xl line-through text-[#9EA6A9]">
-                      #{item?.discount?.toFixed(2)}
+                      ₦{item?.discount?.toFixed(2)}
                     </p>
                   )}
-                  <p className="font-bold text-2xl">#{item.price.toFixed(2)}</p>
+                  <p className="font-bold text-2xl text-black">
+                    ₦{item.price.toFixed(2)}
+                  </p>
                 </span>
-                <button className="text-[#9EA6A9] rounded-[10px] h-14 px-8 border border-[#9EA6A9] focus:outline-none">
+                <button className="text-[#CCA501] rounded-[10px] h-14 px-8 border border-[#CCA501] focus:outline-none">
                   Add to Cart
                 </button>
               </div>

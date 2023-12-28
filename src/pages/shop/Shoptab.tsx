@@ -17,7 +17,7 @@ const Shoptab = () => {
           selectedIndex={tabIndex}
           onSelect={(index) => setTabIndex(index)}
         >
-          <TabList className="flex lg:mt-0 mt-12 bg-white h-12 items-center justify-center z-40 mb-8">
+          <TabList className="flex lg:mt-0 mt-12 bg-white h-12 items-center sm:justify-center justify-start z-40 mb-8 whitespace-pre overflow-auto gap-x-4">
             {TabTitle.map((title, key) => (
               <Tab
                 key={key}
@@ -28,7 +28,7 @@ const Shoptab = () => {
             ))}
           </TabList>
           <TabPanel>
-            <div className="border border-[#E2E2E2] rounded-[10px] py-12 pl-12 pr-[253px]">
+            <div className="border border-[#E2E2E2] rounded-[10px] py-12 lg:pl-12 lg:pr-[253px] px-3">
               <span className="leading-7 text-lg text-black">
                 <p>
                   Nature’s Way Alive! B-Complex Gummies, B-Vitamins, Mango
