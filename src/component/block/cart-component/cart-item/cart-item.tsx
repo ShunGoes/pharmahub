@@ -1,4 +1,3 @@
-import Cart_Item_1 from "./../../../../assets/cart-assets/cart-item-1.svg";
 import AddBtn from "./../../../../assets/cart-assets/cart-plus.svg";
 import SubtractBtn from "./../../../../assets/cart-assets/cart-minus.svg";
 import { useState, useContext } from "react";
