@@ -15,6 +15,7 @@ const UserSignup = lazy(() => import("../pages/auth/userAuthPages/UserSignup"))
 const CartPage = lazy(() => import("../pages/cart/cart"))
 const ShopPage = lazy(() => import("../pages/shop/ShopPage"));
 const ShopById = lazy(() => import("../pages/shop/shopById"));
+const Doctor_blog = lazy(() => import("../pages/Doctor_blog"));
 
 export const element = createBrowserRouter([
     {
@@ -94,6 +95,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <CartPage />
+            }
+        ]
+    },
+    {
+        path: "/blog-doctor",
+        element: <ShopLayout />,
+        children: [
+            {
+                index: true,
+                element: <Doctor_blog />
             }
         ]
     },
