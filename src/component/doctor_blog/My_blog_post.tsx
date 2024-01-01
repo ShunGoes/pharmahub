@@ -46,7 +46,7 @@ const My_blog_post = () => {
         >
           <img
             src={data.image}
-            className="lg:h-32 h-12 lg:w-32 w-12 rounded-[4px]"
+            className="xl:h-32 lg:h-24 h-10 xl:w-32 lg:w-24 w-10 rounded-[4px]"
           />
           <div>
             <span className="text-[#0C2129] flex items-center justify-between">
@@ -88,7 +88,7 @@ const My_blog_post = () => {
         >
           <img
             src={data.image}
-            className="lg:h-32 h-12 lg:w-32 w-12 rounded-[4px]"
+            className="xl:h-32 lg:h-24 h-10 xl:w-32 lg:w-24 w-10 rounded-[4px]"
           />
           <div>
             <span className="text-[#0C2129] flex items-center justify-between">
