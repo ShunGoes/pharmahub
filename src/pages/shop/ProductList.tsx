@@ -21,7 +21,7 @@ const ProductList = () => {
           <div
             key={item.id}
             onClick={() => navigate("/shopbyid")}
-            className="rounded-[10px] border border-[#E2E2E2] pt-20 pb-4 px-8"
+            className="rounded-[10px] border border-[#E2E2E2] pt-20 pb-4 px-8 cursor-pointer"
           >
             <div className="flex justify-center relative ">
               <img
@@ -46,10 +46,10 @@ const ProductList = () => {
               {" "}
               {item?.discount && (
                 <p className="font-bold text-2xl line-through text-[#9EA6A9]">
-                  #{item?.discount?.toFixed(2)}
+                  ₦{item?.discount?.toFixed(2)}
                 </p>
               )}
-              <p className="font-bold text-2xl">#{item.price.toFixed(2)}</p>
+              <p className="font-bold text-2xl">₦{item.price.toFixed(2)}</p>
             </span>
             <button className="text-[#9EA6A9] rounded-[10px] h-14 px-8 border border-[#9EA6A9] focus:outline-none">
               Add to Cart

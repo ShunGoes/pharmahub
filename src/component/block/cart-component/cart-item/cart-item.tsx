@@ -7,7 +7,7 @@ interface ProductOject {
   id: number;
   name: string;
   imageUrl: string;
-  price: number | string;
+  price: number;
   sex: string;
 }
 interface CartItemProps {
@@ -91,11 +91,4 @@ const CartItem: React.FC<CartItemProps> = ({ obj }) => {
 
 export default CartItem;
 
-// <div className="w-10/12 lg:w-[793px]  mx-auto py-6 border-2 grid grid-cols-12 gap-3 h-full">
-//
-//
-//                 <div className='w-[150px] hidden lg:block h-full border-2'>
 
-//                 </div>
-//             </div>
-//         </div>

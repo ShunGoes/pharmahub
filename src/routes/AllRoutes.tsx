@@ -5,10 +5,7 @@ import { lazy } from "react";
 import SelectSigninLayout from "../layout/authLayout/selectAuth/SelectSigninLayout";
 import SelectSignupLayout from "../layout/authLayout/selectAuth/SelectSignupLayout";
 import { UserSigninLayout, UserSignupLayout } from "../layout/authLayout";
-import ShopPage from "../pages/shop/ShopPage";
 import ShopLayout from "../pages/shop/ShopLayout";
-import ShopById from "../pages/shop/shopById";
-
 
 const LandingPage = lazy(() => import("../pages/homePage/LandingPage"));
 const SelectSignin = lazy(() => import("../pages/auth/selectAuthPages/SelectSignin"));
@@ -16,7 +13,9 @@ const SelectSignup = lazy(() => import("../pages/auth/selectAuthPages/SelectSign
 const UserSignin = lazy(() => import("../pages/auth/userAuthPages/UserSignin"))
 const UserSignup = lazy(() => import("../pages/auth/userAuthPages/UserSignup"))
 const CartPage = lazy(() => import("../pages/cart/cart"))
-
+const ShopPage = lazy(() => import("../pages/shop/ShopPage"));
+const ShopById = lazy(() => import("../pages/shop/shopById"));
+const Doctor_blog = lazy(() => import("../pages/Doctor_blog"));
 
 export const element = createBrowserRouter([
     {
@@ -96,6 +95,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <CartPage />
+            }
+        ]
+    },
+    {
+        path: "/blog-doctor",
+        element: <ShopLayout />,
+        children: [
+            {
+                index: true,
+                element: <Doctor_blog />
             }
         ]
     },
