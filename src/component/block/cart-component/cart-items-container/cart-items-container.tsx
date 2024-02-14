@@ -11,7 +11,7 @@ const CartItemsContainer = () => {
   return (
     <div className="x lg:w-[793px] ">
         <div className="hidden lg:block ">
-            <div className="flex text-[#818181] text-[15px] font-[500]">
+            <div className="flex  text-[15px] font-[500]">
                 <p className="w-[481px] py-[16px] pl-[32px]">Product</p>
                 <p className="w-[156px] py-[16px] pl-[32px]">Quantity</p>
                 <p className="w-[156px] py-[16px] pl-[32px]">Total</p>
