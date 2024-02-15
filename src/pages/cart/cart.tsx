@@ -9,7 +9,7 @@ const CartPage = () => {
     const {cartItems} = useContext(CartContext)!
 
   return (
-    <section className="h-auto  flex justify-center items-center text-[#141414] font-mont pt-32 pb-8">
+    <section className="h-auto bg-white flex justify-center items-center text-[#141414] font-mont pt-32 pb-8">
 
         <div className="w-full lg:w-[1200px] ">
             {
